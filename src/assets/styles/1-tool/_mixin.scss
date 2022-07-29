@@ -1,6 +1,20 @@
 @mixin tamanoIconos {
   height: 70px;
   width: 70px;
-  margin: 10px;
+  margin: $margin-10;
   border: solid 1px black;
+}
+
+@mixin centerFlex {
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin grid($colum: 3, $row: 2) {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat($colum, 1fr);
+  grid-template-rows: repeat($row, 1fr);
+  gap: 1rem;
+  margin: 0 auto;
 }

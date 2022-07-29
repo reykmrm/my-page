@@ -10,13 +10,14 @@
       repellendus saepe aliquid repudiandae numquam, distinctio cumque eius, officiis recusandae
       blanditiis iure adipisci qui. Amet, ullam expedita.
     </div>
+    <h1>Titulo del contenedor card</h1>
     <div class="contenedor-card-secciones">
-      <h1>Titulo del contenedor card</h1>
       <ComponetCardSeccionesVue />
       <ComponetCardSeccionesVue />
       <ComponetCardSeccionesVue />
     </div>
     <div class="contenedor-habilidades">
+    <h1>Habilidades</h1>
       <font-awesome-icon icon="fa-brands fa-vuejs" />
       <font-awesome-icon icon="fa-brands fa-html5 " />
       <font-awesome-icon icon="fa-brands fa-css3-alt" />
