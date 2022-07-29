@@ -17,9 +17,13 @@
       <ComponetCardSeccionesVue />
     </div>
     <div class="contenedor-habilidades">
-      <font-awesome-icon icon="fa-solid fa-user-secret" />
-      <font-awesome-icon icon="fa-brands fa-html5 tamano" />
-      <h1>hola</h1>
+      <font-awesome-icon icon="fa-brands fa-vuejs" />
+      <font-awesome-icon icon="fa-brands fa-html5 " />
+      <font-awesome-icon icon="fa-brands fa-css3-alt" />
+      <font-awesome-icon icon="fa-brands fa-square-js" />
+      <font-awesome-icon icon="fas fa-database " />
+      <font-awesome-icon icon="fa-brands fa-java" />
+      <font-awesome-icon icon="fa-brands fa-python" />
     </div>
   </div>
 </template>
@@ -37,8 +41,15 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-.tamano{
-  height: 30px;
-  width: 30px;
+@import '../assets/styles/main.scss';
+
+.fa-html5,
+.fa-square-js,
+.fa-vuejs,
+.fa-css3-alt,
+.fa-java,
+.fa-database,
+.fa-python {
+  @include tamanoIconos;
 }
 </style>
