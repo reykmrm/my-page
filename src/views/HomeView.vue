@@ -4,11 +4,11 @@
       <div class="baner-titulo">
         <h1>Titulo del mensaje</h1>
       </div>
-    </div>
-    <div class="baner-mensaje">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt cupiditate unde rerum, est
-      repellendus saepe aliquid repudiandae numquam, distinctio cumque eius, officiis recusandae
-      blanditiis iure adipisci qui. Amet, ullam expedita.
+      <div class="baner-mensaje">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt cupiditate unde rerum, est
+        repellendus saepe aliquid repudiandae numquam, distinctio cumque eius, officiis recusandae
+        blanditiis iure adipisci qui. Amet, ullam expedita.
+      </div>
     </div>
     <h1>Titulo del contenedor card</h1>
     <div class="contenedor-card-secciones">
@@ -17,7 +17,7 @@
       <ComponetCardSeccionesVue />
     </div>
     <div class="contenedor-habilidades">
-    <h1>Habilidades</h1>
+      <h1>Habilidades</h1>
       <font-awesome-icon icon="fa-brands fa-vuejs" />
       <font-awesome-icon icon="fa-brands fa-html5 " />
       <font-awesome-icon icon="fa-brands fa-css3-alt" />
@@ -41,8 +41,18 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '../assets/styles/main.scss';
+
+.contendor-baner {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border: solid 1px;
+  width: 80%;
+  height: 400px;
+  @include centerFlex;
+}
 
 .fa-html5,
 .fa-square-js,
