@@ -1,3 +1,9 @@
 .contenedor-card-secciones {
   @include grid(3, 1);
 }
+
+@media (max-width: 414px) {
+  .contenedor-card-secciones {
+    @include grid(2, 2);
+  }
+}

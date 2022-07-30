@@ -1,0 +1,14 @@
+h1 {
+  font-size: 3rem;
+  color: $colorTextTitle;
+}
+
+p {
+  color: $colrTextP;
+}
+
+@media (max-width: 414px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+}

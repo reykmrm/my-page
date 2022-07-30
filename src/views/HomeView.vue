@@ -5,12 +5,14 @@
         <h1>Titulo del mensaje</h1>
       </div>
       <div class="baner-mensaje">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt cupiditate unde rerum, est
-        repellendus saepe aliquid repudiandae numquam, distinctio cumque eius, officiis recusandae
-        blanditiis iure adipisci qui. Amet, ullam expedita.
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt cupiditate unde rerum,
+          est repellendus saepe aliquid repudiandae numquam, distinctio cumque eius, officiis
+          recusandae blanditiis iure adipisci qui. Amet, ullam expedita.
+        </p>
       </div>
     </div>
-    <h1>Titulo del contenedor card</h1>
+    <h1 class="titulo-card">Titulo del contenedor card</h1>
     <div class="contenedor-card-secciones">
       <ComponetCardSeccionesVue />
       <ComponetCardSeccionesVue />
@@ -44,11 +46,29 @@ export default defineComponent({
 <style lang="scss" scoped>
 @import '../assets/styles/main.scss';
 
+h1 {
+  margin-block: $margin-10;
+  margin-top: $margin-20;
+}
+
+.contendor-baner,
+.contenedor-card-secciones,
+.contenedor-habilidades {
+  margin-bottom: $margin-20;
+}
+
+.baner-mensaje {
+  width: 80%;
+  border-top: 3px solid white;
+  margin-top: $margin-10 * 2;
+  padding: $padding-10 * 3;
+}
+
 .contendor-baner {
   display: flex;
   flex-direction: column;
   margin: auto;
-  border: solid 1px;
+  border: solid 1px white;
   width: 80%;
   height: 400px;
   @include centerFlex;
@@ -62,5 +82,14 @@ export default defineComponent({
 .fa-database,
 .fa-python {
   @include tamanoIconos;
+}
+
+@media (max-width: 414px) {
+  .baner-mensaje {
+    width: 60%;
+    border-top: 3px solid white;
+    margin-top: $margin-10;
+    padding: $padding-10 * 2;
+  }
 }
 </style>

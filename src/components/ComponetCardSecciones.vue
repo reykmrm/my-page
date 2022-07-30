@@ -31,4 +31,16 @@ h1 {
     background: blue;
   }
 }
+
+@media (max-width: 414px) {
+  .contenedor-card {
+    width: 100%;
+    height: 200px;
+  }
+
+  .tamanoImagen {
+    width: 100%;
+    height: 200px;
+  }
+}
 </style>
