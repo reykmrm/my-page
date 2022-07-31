@@ -15,9 +15,9 @@
     </div>
     <h1 class="titulo-card">Titulo del contenedor card</h1>
     <div class="contenedor-card-secciones">
-      <ComponetCardSeccionesVue />
-      <ComponetCardSeccionesVue />
-      <ComponetCardSeccionesVue />
+      <ComponetCardSeccionesVue tituloCard="Fotos" :srcImagen="require('../assets/media/img/card-fotos.png')"/>
+      <ComponetCardSeccionesVue tituloCard="Dibujos" :srcImagen="require('../assets/media/img/card-dibujos.png')"/>
+      <ComponetCardSeccionesVue tituloCard="Videos" :srcImagen="require('../assets/media/img/card-videos.jpg')"/>
     </div>
     <div class="contenedor-baner-portafolio">
       <div class="contenedor-baner-portafolio-texto">
