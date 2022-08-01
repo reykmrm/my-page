@@ -8,10 +8,9 @@
 @mixin centerFlex {
   justify-content: center;
   align-items: center;
-  
 }
 
-@mixin grid($colum: 3, $row: 2) {
+@mixin grid($colum , $row) {
   width: 80%;
   display: grid;
   grid-template-columns: repeat($colum, 1fr);

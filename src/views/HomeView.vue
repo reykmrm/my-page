@@ -29,7 +29,7 @@
         </p>
       </div>
       <div class="contenedor-baner-portafolio-imagen" oncontextmenu="return false;">
-        <video controls muted autoplay loop @mouseover="autoPlay" @focus="bar">
+        <video muted autoplay loop @mouseover="autoPlay" @focus="bar">
           <source src="../assets/media/videos/videoBaner.mp4" type="video/MP4" />
         </video>
       </div>
