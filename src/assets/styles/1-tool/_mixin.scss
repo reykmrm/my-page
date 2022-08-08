@@ -1,11 +1,5 @@
-@mixin tamanoIconos {
-  height: 70px;
-  width: 70px;
-  margin: $margin-10;
-  border: solid 1px black;
-}
-
 @mixin centerFlex {
+  display: flex;
   justify-content: center;
   align-items: center;
 }

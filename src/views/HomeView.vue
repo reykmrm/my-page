@@ -15,9 +15,18 @@
     </div>
     <h1 class="titulo-card">Titulo del contenedor card</h1>
     <div class="contenedor-card-secciones">
-      <ComponetCardSeccionesVue tituloCard="Fotos" :srcImagen="require('../assets/media/img/card-fotos.png')"/>
-      <ComponetCardSeccionesVue tituloCard="Dibujos" :srcImagen="require('../assets/media/img/card-dibujos.png')"/>
-      <ComponetCardSeccionesVue tituloCard="Videos" :srcImagen="require('../assets/media/img/card-videos.jpg')"/>
+      <ComponetCardSeccionesVue
+        tituloCard="Fotos"
+        :srcImagen="require('../assets/media/img/card-fotos.png')"
+      />
+      <ComponetCardSeccionesVue
+        tituloCard="Dibujos"
+        :srcImagen="require('../assets/media/img/card-dibujos.png')"
+      />
+      <ComponetCardSeccionesVue
+        tituloCard="Videos"
+        :srcImagen="require('../assets/media/img/card-videos.jpg')"
+      />
     </div>
     <div class="contenedor-baner-portafolio">
       <div class="contenedor-baner-portafolio-texto">
@@ -44,7 +53,7 @@
       <font-awesome-icon icon="fa-brands fa-java" />
       <font-awesome-icon icon="fa-brands fa-python" />
     </div>
-    <ComponetFormContactanosVue/>
+    <ComponetFormContactanosVue />
   </div>
 </template>
 
@@ -52,7 +61,6 @@
 import { defineComponent } from 'vue';
 import ComponetCardSeccionesVue from '@/components/ComponetCardSecciones.vue';
 import ComponetFormContactanosVue from '@/components/ComponetFormContactanos.vue';
-import { faVideo } from '@fortawesome/free-solid-svg-icons';
 
 export default {
   name: 'HomeView',
@@ -93,16 +101,6 @@ h1 {
   width: 80%;
   height: 400px;
   @include centerFlex;
-}
-
-.fa-html5,
-.fa-square-js,
-.fa-vuejs,
-.fa-css3-alt,
-.fa-java,
-.fa-database,
-.fa-python {
-  @include tamanoIconos;
 }
 
 .contenedor-baner-portafolio {
