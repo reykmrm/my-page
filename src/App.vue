@@ -4,10 +4,34 @@
     <router-link to="/about">About</router-link>
   </nav>
   <router-view />
+  <form action="#">
+    <label for="fondo">
+      <input type="checkbox" class="fondo" @click="fondo"/>
+      Modo claro
+    </label>
+  </form>
 </template>
+<script>
+
+
+export default ({
+ data() {
+  return {
+    body:'',
+  }
+ },
+ methods: {
+  fondo(){
+    this.body = 'blue';
+  },
+ },
+})
+</script>
+
 
 <style lang="scss">
 @import './assets/styles/main.scss';
+
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

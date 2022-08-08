@@ -44,18 +44,21 @@
       <font-awesome-icon icon="fa-brands fa-java" />
       <font-awesome-icon icon="fa-brands fa-python" />
     </div>
+    <ComponetFormContactanosVue/>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 import ComponetCardSeccionesVue from '@/components/ComponetCardSecciones.vue';
+import ComponetFormContactanosVue from '@/components/ComponetFormContactanos.vue';
 import { faVideo } from '@fortawesome/free-solid-svg-icons';
 
 export default {
   name: 'HomeView',
   components: {
     ComponetCardSeccionesVue,
+    ComponetFormContactanosVue,
   },
   methods: {},
 };
